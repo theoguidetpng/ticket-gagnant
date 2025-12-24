@@ -2,11 +2,11 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <title>🎉 TICKET GAGNANT 🎉</title>
+  <title>🎄 TICKET GAGNANT DE NOËL 🎄</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     body {
-      background: radial-gradient(circle, #ff00cc, #3333ff);
+      background: linear-gradient(180deg, #0b3d2e, #b30000);
       font-family: 'Comic Sans MS', 'Comic Sans', cursive;
       display: flex;
       align-items: center;
@@ -15,37 +15,72 @@
       margin: 0;
       color: white;
       text-align: center;
+      overflow: hidden;
+    }
+
+    /* neige */
+    body::before {
+      content: "❄ ❄ ❄ ❄ ❄ ❄ ❄ ❄ ❄ ❄";
+      position: fixed;
+      top: -50px;
+      left: 0;
+      width: 100%;
+      font-size: 2rem;
+      animation: snow 10s linear infinite;
+      opacity: 0.8;
+    }
+
+    @keyframes snow {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(120vh); }
     }
 
     .card {
-      background: linear-gradient(45deg, gold, hotpink);
-      border: 8px dashed red;
+      background: linear-gradient(45deg, #d40000, #0b6b3a);
+      border: 10px dashed gold;
       padding: 40px;
-      border-radius: 20px;
-      box-shadow: 0 0 40px yellow;
+      border-radius: 25px;
+      box-shadow: 0 0 40px gold;
       animation: shake 1.5s infinite;
+      max-width: 420px;
     }
 
     h1 {
-      font-size: 3rem;
+      font-size: 2.8rem;
       animation: blink 0.6s infinite alternate;
-      text-shadow: 0 0 10px red, 0 0 20px yellow;
-    }
-
-    p {
-      font-size: 1.5rem;
+      text-shadow: 0 0 10px gold, 0 0 20px red;
     }
 
     .winner {
-      font-size: 2.5rem;
+      font-size: 2.3rem;
       font-weight: bold;
-      color: lime;
+      color: #00ff6a;
       animation: blink 0.4s infinite alternate;
+      margin: 20px 0;
+    }
+
+    p {
+      font-size: 1.3rem;
+    }
+
+    img {
+      width: 100%;
+      max-width: 300px;
+      margin-top: 20px;
+      border: 6px solid gold;
+      border-radius: 15px;
+      box-shadow: 0 0 25px red;
+    }
+
+    .emoji {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      animation: blink 1s infinite alternate;
     }
 
     @keyframes blink {
       from { opacity: 1; transform: scale(1); }
-      to { opacity: 0.3; transform: scale(1.1); }
+      to { opacity: 0.4; transform: scale(1.1); }
     }
 
     @keyframes shake {
@@ -55,23 +90,19 @@
       75% { transform: rotate(-1deg); }
       100% { transform: rotate(0deg); }
     }
-
-    .emoji {
-      font-size: 3rem;
-      animation: blink 0.8s infinite alternate;
-    }
   </style>
 </head>
 <body>
   <div class="card">
-    <div class="emoji">🎊🎁🎊</div>
-    <h1>FÉLICITATIONS !!!</h1>
+    <div class="emoji">🎄🎁🎄</div>
+    <h1>JOYEUX NOËL !!!</h1>
     <p class="winner">🍷 VOUS AVEZ GAGNÉ 🍷</p>
-    <p>Ce ticket est officiellement certifié<br>100% GAGNANT ✅</p>
-    <p>🎉 Vous avez remporté une <strong>CAVE À VIN</strong> 🍷<br>Un cadeau d’exception pour conserver vos meilleures bouteilles.</p>
-    <p>Présentez ce message pour recevoir votre cadeau 🎁</p>
-    <img src="cave_vin.webp" alt="Cave à vin" style="width:100%; max-width:300px; margin-top:20px; border:5px solid gold; box-shadow:0 0 20px red;">
-    <div class="emoji">💰✨💰</div>
+    <p>🎅 Le Père Noël est passé par ici !</p>
+    <p>Vous avez remporté une <strong>CAVE À VIN</strong> 🍷<br>
+    pour conserver vos plus belles bouteilles.</p>
+    <img src="cave_vin.webp" alt="Cave à vin">
+    <p>🎄 Ticket certifié gagnant de Noël 🎄</p>
+    <div class="emoji">❄✨🍾</div>
   </div>
 </body>
 </html>
