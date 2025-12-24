@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>🎉 TICKET GAGNANT 🎉</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      background: radial-gradient(circle, #ff00cc, #3333ff);
+      font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      color: white;
+      text-align: center;
+    }
+
+    .card {
+      background: linear-gradient(45deg, gold, hotpink);
+      border: 8px dashed red;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 40px yellow;
+      animation: shake 1.5s infinite;
+    }
+
+    h1 {
+      font-size: 3rem;
+      animation: blink 0.6s infinite alternate;
+      text-shadow: 0 0 10px red, 0 0 20px yellow;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+
+    .winner {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: lime;
+      animation: blink 0.4s infinite alternate;
+    }
+
+    @keyframes blink {
+      from { opacity: 1; transform: scale(1); }
+      to { opacity: 0.3; transform: scale(1.1); }
+    }
+
+    @keyframes shake {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(1deg); }
+      50% { transform: rotate(0deg); }
+      75% { transform: rotate(-1deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+    .emoji {
+      font-size: 3rem;
+      animation: blink 0.8s infinite alternate;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="emoji">🎊🎁🎊</div>
+    <h1>FÉLICITATIONS !!!</h1>
+    <p class="winner">🍷 VOUS AVEZ GAGNÉ 🍷</p>
+    <p>Ce ticket est officiellement certifié<br>100% GAGNANT ✅</p>
+    <p>🎉 Vous avez remporté une <strong>CAVE À VIN</strong> 🍷<br>Un cadeau d’exception pour conserver vos meilleures bouteilles.</p>
+    <p>Présentez ce message pour recevoir votre cadeau 🎁</p>
+    <img src="cave_vin.webp" alt="Cave à vin" style="width:100%; max-width:300px; margin-top:20px; border:5px solid gold; box-shadow:0 0 20px red;">
+    <div class="emoji">💰✨💰</div>
+  </div>
+</body>
+</html>
